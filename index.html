@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="nav-right">
+                <ul  id="myList" style="list-style: none;">
+                    <li><h2>Burbank</h2></li>
+                    <li><h2>Chicago</h2></li>
+                    <li><h2>Dallas</h2></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="city-container">
+
+        <div class="city-info">
+            <div class="info-left">
+                <h1>San Jose</h1>
+            </div>
+            <div class="info-right">
+                <label for="temperature">show temperature in:</label>
+                <select name="temperature" id="temperature">
+                    <option value="Celsius">°C</option>
+                    <option value="Fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+
+        <div class="main-content">
+            <div class="weather">
+                <h2>Today</h2>
+                <img class="image" src="assets/some_rain.png" alt="">
+                <h6>some rain</h6>
+                <div class="highLow">
+                    <span style="color:red;"><h2>24°</h2></span>
+                    <span style="color:blue;"><h2>18°</h2></span>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Today</h2>
+                <img class="image" src="assets/some_sun.png" alt="rain">
+                <h6>some rain</h6>
+                <div class="highLow">
+                    <span style="color:red;"><h2>27°</h2></span>
+                    <span style="color:blue;"><h2>19°</h2></span>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Today</h2>
+                <img class="image" src="assets/some_clouds.png" alt="">
+                <h6>some rain</h6>
+                <div class="highLow">
+                    <span style="color:red;"><h2>21°</h2></span>
+                    <span style="color:blue;"><h2>16°</h2></span>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Today</h2>
+                <img class="image" src="assets/some_sun.png" alt="">
+                <h6>some rain</h6>
+                <div class="highLow">
+                    <span style="color:red;"><h2>26°</h2></span>
+                    <span style="color:blue;"><h2>21°</h2></span>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+    <div id="elementToRemove" class="footer-container">
+        <div class="footer">
+            <img src="assets/cookie.png" alt="">
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <span>Read more...</span></p>
+            <button onclick="removeElement()" class="cookie-btn">I accept</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
